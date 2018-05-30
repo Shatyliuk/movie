@@ -1,0 +1,79 @@
+.app
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)
+  min-height: 100vh
+
+#movies
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: flex-start
+
+.movie
+  margin-right: 5px
+  flex-basis: 290px
+  display: flex
+  flex-direction: column
+  margin-bottom: 15px
+  text-align: center
+
+img
+  width: 100%
+
+h2
+  font-size: 1em
+  margin-bottom: 5px
+
+.search
+  display: flex
+  position: relative
+  margin-bottom: 15px
+
+#search
+  margin-top: 15px
+  line-height: 36px
+  text-indent: 10px
+  width: 100%
+  border: 1px solid blueviolet
+  border-radius: 10px
+  font-size: 24px
+  &:focus
+    outline: none
+
+#searchButton
+  position: absolute
+  right: 0
+  top: 20px
+  background: none
+  border: none
+  font-size: 24px
+  font-family: fontawesome, serif
+.movie__info
+  max-width: 300px
+  background-color: #fff
+  max-height: 0
+  padding: 0
+  overflow: hidden
+  transition: max-height .6s ease-out
+  ul
+    list-style-type: none
+    text-align: left
+    padding-left: 0
+    
+.movie__button
+  display: flex
+  border: none
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+  height: 50px
+  background-color: #000
+  color: #fff
+  align-items: center
+  justify-content: center
+  font-family: fontawesome, serif
+  &:before
+    content: '\f103'
+    color: #fff
+  &.active
+    &:before
+      content: '\f102'
+

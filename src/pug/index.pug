@@ -1,0 +1,10 @@
+extends /layout/main
+block variables
+    - var title = 'Index'
+block content
+    .app
+        .container
+            .search
+                input(id="search" type="text" placeholder="enter film title")
+                button(id="searchButton") 
+            div(id="movies")
